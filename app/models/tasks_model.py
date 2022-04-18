@@ -5,7 +5,7 @@ from app.models.tasks_categories_model import tasks_categories_table
 
 @dataclass
 class TasksModel(db.Model):
-    __TABLENAME__ = "tasks_model"
+    __tablename__ = "tasks"
 
     id: int
     name: str
@@ -19,7 +19,7 @@ class TasksModel(db.Model):
     duration = db.Column(db.Integer)
     importance = db.Column(db.Integer)
     urgency = db.Column(db.Integer)
-    eisenhower_id = db.Column(db.Integer, db.ForeignKey("eisenhower_model.id"), nullable=False)
+    eisenhower_id = db.Column(db.Integer, db.ForeignKey("eisenhowers.id"), nullable=False)
 
 
     #relações

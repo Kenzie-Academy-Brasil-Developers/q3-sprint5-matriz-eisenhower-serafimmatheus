@@ -4,7 +4,7 @@ from app.routes.eisenhower_routes import bp as bp_eisenhower
 from app.routes.tasks_routes import bp as bp_tasks
 
 
-bp_api = Blueprint("api", __name__, url_prefix="/api")
+bp_api = Blueprint("api", __name__, url_prefix="")
 
 
 def init_app(app: Flask):

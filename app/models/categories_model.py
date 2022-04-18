@@ -4,7 +4,7 @@ from app.models.tasks_categories_model import tasks_categories_table
 
 @dataclass
 class CategoriesModel(db.Model):
-    __TABLENAME__ = "categories_model"
+    __tablename__ = "categories"
 
     id: int
     name: str

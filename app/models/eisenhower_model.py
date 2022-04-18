@@ -4,7 +4,7 @@ from app.configs.database import db
 
 @dataclass
 class EisenhowerModel(db.Model):
-    __TABLENAME__ = "eisenhower_model"
+    __tablename__ = "eisenhowers"
 
     id: int
     type: str
